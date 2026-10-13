@@ -1,0 +1,2 @@
+import { BeforeAfterSection } from "@/components/sections/before-after/BeforeAfterSection";
+export default function BeforeAfterPreviewPage() { return <main className="min-h-screen"><BeforeAfterSection /></main>; }

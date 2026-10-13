@@ -1,0 +1,2 @@
+import { ProjectGallerySection } from "@/components/sections/project-gallery/ProjectGallerySection";
+export default function ProjectGalleryPreviewPage() { return <main className="min-h-screen"><ProjectGallerySection /></main>; }

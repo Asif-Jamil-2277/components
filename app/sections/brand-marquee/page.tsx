@@ -1,0 +1,2 @@
+import { BrandMarqueeSection } from "@/components/sections/brand-marquee/BrandMarqueeSection";
+export default function BrandMarqueePreviewPage() { return <main className="min-h-screen"><BrandMarqueeSection /></main>; }
