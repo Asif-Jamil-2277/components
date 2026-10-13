@@ -128,3 +128,287 @@
     @apply font-sans;
   }
 }
+
+/* =========================================
+   BENTO GRID — PREMIUM MOTION SYSTEM
+========================================= */
+
+.bento-grid-animate > article {
+  opacity: 0;
+  animation: bentoReveal 700ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transition:
+    transform 350ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 350ms ease,
+    background-position 700ms ease;
+  will-change: transform, opacity;
+}
+
+/* Staggered card entrance */
+.bento-grid-animate > article:nth-child(1) {
+  animation-delay: 60ms;
+}
+
+.bento-grid-animate > article:nth-child(2) {
+  animation-delay: 140ms;
+}
+
+.bento-grid-animate > article:nth-child(3) {
+  animation-delay: 220ms;
+}
+
+.bento-grid-animate > article:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.bento-grid-animate > article:nth-child(5) {
+  animation-delay: 380ms;
+}
+
+.bento-grid-animate > article:nth-child(6) {
+  animation-delay: 460ms;
+}
+
+.bento-grid-animate > article:nth-child(7) {
+  animation-delay: 540ms;
+}
+
+.bento-grid-animate > article:nth-child(8) {
+  animation-delay: 620ms;
+}
+
+.bento-grid-animate > article:nth-child(9) {
+  animation-delay: 700ms;
+}
+
+/* Smooth reveal */
+@keyframes bentoReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* Interactive card lift */
+.bento-grid-animate > article:hover {
+  transform: translateY(-4px);
+}
+
+/* Subtle image movement */
+.bento-grid-animate > article:nth-child(2):hover,
+.bento-grid-animate > article:nth-child(3):hover,
+.bento-grid-animate > article:nth-child(4):hover,
+.bento-grid-animate > article:nth-child(9):hover {
+  background-position: 55% 45%;
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bento-grid-animate > article {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .bento-grid-animate > article:hover {
+    transform: none;
+  }
+}
+
+
+/* =========================================
+   ANIMATED STATS — MOTION SYSTEM
+========================================= */
+
+.stats-motion .stats-card {
+  opacity: 0;
+  animation: statsCardReveal 750ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.stats-motion .stats-card:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.stats-motion .stats-card:nth-child(2) {
+  animation-delay: 220ms;
+}
+
+.stats-motion .stats-card:nth-child(3) {
+  animation-delay: 340ms;
+}
+
+.stats-motion .stats-number {
+  animation: statsNumberReveal 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 250ms;
+}
+
+.stats-motion .stats-bar {
+  transform-origin: bottom;
+  animation: statsBarReveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes statsCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes statsNumberReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes statsBarReveal {
+  from {
+    opacity: 0;
+    transform: scaleY(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stats-motion .stats-card,
+  .stats-motion .stats-number,
+  .stats-motion .stats-bar {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .stats-motion .stats-bar > div {
+    transition: none;
+  }
+}
+
+/* =========================================
+   TESTIMONIALS — EDITORIAL MOTION
+========================================= */
+
+.testimonial-motion .testimonial-card {
+  opacity: 0;
+  animation: testimonialReveal 800ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.testimonial-motion .testimonial-card:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.testimonial-motion .testimonial-card:nth-child(2) {
+  animation-delay: 240ms;
+}
+
+.testimonial-motion .testimonial-card:nth-child(3) {
+  animation-delay: 380ms;
+}
+
+@keyframes testimonialReveal {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-motion .testimonial-card {
+  transition:
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 400ms ease,
+    border-color 400ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-motion .testimonial-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* =========================================
+   PRICING PLANS — PREMIUM MOTION
+========================================= */
+
+.pricing-motion .pricing-card {
+  opacity: 0;
+  animation: pricingCardReveal 750ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.pricing-motion .pricing-card:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.pricing-motion .pricing-card:nth-child(2) {
+  animation-delay: 230ms;
+}
+
+.pricing-motion .pricing-card:nth-child(3) {
+  animation-delay: 360ms;
+}
+
+.pricing-motion .pricing-number {
+  animation: pricingNumberReveal 350ms ease both;
+}
+
+@keyframes pricingCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pricingNumberReveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-motion .pricing-card,
+  .pricing-motion .pricing-number {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .pricing-motion .pricing-card {
+    transition: none;
+  }
+}

@@ -20,7 +20,14 @@ import { ShowcaseCardsSection } from "@/components/sections/showcase-cards/Showc
 import { MediaCardsSection } from "@/components/sections/media-cards/MediaCardsSection"
 import { ToolCardsSection } from "@/components/sections/tool-cards/ToolCardsSection"
 import { ProductShowcase } from "@/components/sections/product-showcase/ProductShowcase"
-
+import { TravelHeroSection } from "@/components/sections/travel-hero/TravelHeroSection"
+import { BentoFeaturesSection } from "@/components/sections/bento-features/BentoFeaturesSection";
+import { AnimatedStatsSection } from "@/components/sections/animated-stats/AnimatedStatsSection";
+import { TestimonialsSection } from "@/components/sections/testimonials/TestimonialsSection";
+import { PricingPlansSection } from "@/components/sections/pricing-plans/PricingPlansSection";
+import { FaqSection } from "@/components/sections/faq-section/FaqSection";
+import { OrbitShowcaseSection } from "@/components/sections/orbit-showcase/OrbitShowcaseSection";
+import { ScrollStorySection } from "@/components/sections/scroll-story/ScrollStorySection";
 /* =========================================================
    FORM COMPONENT DATA
 ========================================================= */
@@ -680,6 +687,24 @@ export default function Home() {
 
       <ProductShowcase />
 
+      {/* TRAVEL HERO */}
+      <TravelHeroSection />
+
+      {/* BENTO FEATURES — NEW SECTION */}
+      <BentoFeaturesSection />
+
+      {/* SECTION 02 — ANIMATED STATISTICS */}
+      <AnimatedStatsSection />
+      {/* SECTION 03 — TESTIMONIALS */}
+      <TestimonialsSection />
+      {/* SECTION 04 — PRICING PLANS */}
+      <PricingPlansSection />
+        {/* SECTION 05 — Faq section */}
+      <FaqSection />
+      {/* SECTION 06 — Orbit Showcase */}
+      <OrbitShowcaseSection />
+        {/* SECTION 06 — scrollStorySection */}
+      <ScrollStorySection />
       {/* =====================================================
           FOOTER
       ===================================================== */}

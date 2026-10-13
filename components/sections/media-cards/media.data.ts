@@ -26,7 +26,7 @@ export const mediaItems: MediaItem[] = [
   },
   {
     id: "media-03",
-    title: "Ant-Man and the Wasp: Quantumania",
+    title: "Ant-Man and the Wasp",
     year: "2022",
     duration: "2h 49m",
     rating: "7.3",
@@ -36,7 +36,7 @@ export const mediaItems: MediaItem[] = [
     id: "media-04",
     title: "Interstellar",
     year: "2014",
-    duration: "2h 29m",
+    duration: "2h 49m",
     rating: "8.7",
     image: "/images/interstellar.jpg",
   },
